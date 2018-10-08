@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>FFImageLoading.Forms</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.2.0.839982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.4.3.840" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+    <Compile Remove="FFUriImageSource.cs" />
+    <Compile Remove="VectorImageOptions.cs" />
+    <Compile Remove="CachedImageEx.cs" />
+    <Compile Remove="SvgUrlResolver.cs" />
+    <Compile Remove="SvgStreamResolver.cs" />
+    <Compile Remove="SvgEmbeddedDataResolver.cs" />
+    <Compile Remove="ISvgController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+</Project>

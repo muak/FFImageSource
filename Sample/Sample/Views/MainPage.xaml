@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
+    xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageSource"
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"    
+    prism:ViewModelLocator.AutowireViewModel="True" 
+    x:Class="Sample.Views.MainPage" Title="{Binding Title.Value}">
+
+    <ScrollView>
+    <FlexLayout Direction="Row" Wrap="Wrap" AlignItems="Start" JustifyContent="SpaceBetween" AlignContent="Start">
+
+        <Button Text="Change" Command="{Binding ChangeCommand}" />
+        <Image Source="{Binding Image.Value}" HeightRequest="100" Aspect="AspectFit" />
+            
+<!--        <ffimageloading:CachedImage Source="{Binding Image.Value}" HeightRequest="100" />-->
+
+        <Image Source="{Binding Image2.Value}" HeightRequest="50" Aspect="AspectFit" />
+        <Image Source="{Binding Image3.Value}" HeightRequest="60" />  
+        <Image Source="{Binding Image4.Value}" HeightRequest="50" />
+        <Image Source="{Binding Image5.Value}" HeightRequest="75" />
+        <Image Source="{Binding Image6.Value}" HeightRequest="75" />
+        <Image Source="{Binding Image7.Value}" HeightRequest="80" />
+        <Image Source="{Binding Image8.Value}" HeightRequest="100" />
+        <Image Source="{Binding Image9.Value}" HeightRequest="70" />
+        <Image Source="{Binding Image10.Value}" HeightRequest="50" />
+        <Image Source="{Binding Image11.Value}" HeightRequest="80" />
+
+    </FlexLayout> 
+    </ScrollView>
+</ContentPage>

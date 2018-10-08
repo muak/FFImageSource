@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Prism.Unity.Forms" Version="7.0.0.396" />
+    <PackageReference Include="ReactiveProperty" Version="4.2.2" />
+    <PackageReference Include="Xamarin.Forms" Version="3.2.0.839982" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resources\colours.svg" />
+    <None Remove="Resources\tiger.svg" />
+    <None Remove="Resources\ios-star.svg" />
+    <None Remove="Resources\icon.png" />
+    <None Remove="Resources\flower.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\colours.svg" />
+    <EmbeddedResource Include="Resources\tiger.svg" />
+    <EmbeddedResource Include="Resources\ios-star.svg" />
+    <EmbeddedResource Include="Resources\icon.png" />
+    <EmbeddedResource Include="Resources\flower.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FFImageSource\FFImageSource.csproj" />
+  </ItemGroup>
+</Project>
