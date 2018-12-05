@@ -2,6 +2,9 @@
 using FFImageLoading.Forms.Platform;
 using Xamarin.Forms.Platform.Android;
 using Android.Content;
+using FFImageLoading.Cache;
+using FFImageLoading.Drawables;
+using System.Reflection;
 
 namespace FFImageLoading.Forms.Droid
 {
