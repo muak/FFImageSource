@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>FFImageSource</id>
+        <version>1.0.0</version>
+        <title>FFImageSource</title>
+        <authors>kamusoft</authors>
+        <owners>kamusoft</owners>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Libraries for XamarinForms </description>
+        <summary />
+        <language>en-US</language>
+        <tags>Test</tags>
+        <dependencies>
+			<group targetFramework="netstandard2.0">
+				<dependency id="Xamarin.FFImageLoading.Svg.Forms" version="2.4.4.859" />
+            </group>
+            <group targetFramework="MonoAndroid">
+                <dependency id="Xamarin.FFImageLoading.Svg.Forms" version="2.4.4.859" />
+            </group>
+            <group targetFramework="MonoTouch">
+                <dependency id="Xamarin.FFImageLoading.Svg.Forms" version="2.4.4.859" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+		<!-- .net standard 2.0 -->
+		<file src="FFImageSource.dll" target="lib/netstandard2.0" />
+        <!-- Mono.Android -->
+        <file src="FFImageSource.dll" target="lib/MonoAndroid" />
+        <file src="FFImageSource.Droid.dll" target="lib/MonoAndroid" />
+        <!-- Mono.Touch -->
+        <file src="FFImageSource.dll" target="lib/MonoTouch" />
+        <file src="FFImageSource.iOS.dll" target="lib/MonoTouch" />
+        <!-- Xamarin.iOS10 -->
+        <file src="FFImageSource.dll" target="lib/Xamarin.iOS10" />
+        <file src="FFImageSource.iOS.dll" target="lib/Xamarin.iOS10" />
+    </files>
+</package>
