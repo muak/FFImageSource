@@ -14,7 +14,6 @@
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <ReleaseVersion>1.1.2</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -216,7 +215,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FFImageSource\FFImageSource.csproj">
-      <Project>{9CCB70D9-DF8F-4005-BD6B-C643D33715F7}</Project>
+      <Project>{C8EA555C-4D1C-41BE-B70F-C45A8D51F324}</Project>
       <Name>FFImageSource</Name>
     </ProjectReference>
   </ItemGroup>

@@ -17,15 +17,20 @@ namespace FFImageLoading.Forms.iOS
             ffImageSource.RegisterCancelToken(cancelationToken);
 
             UIImage image = null;
+            var taskParameter = ffImageSource.GetTaskParameter();
             try
             {
-                image = await Task.Run(() => ffImageSource.TaskParameter.AsUIImageAsync(), cancelationToken);
+                image = await Task.Run(() => taskParameter.AsUIImageAsync(), cancelationToken);
                 ffImageSource.LoadingCompleted(false);
             }
             catch (OperationCanceledException)
             {
                 ffImageSource.LoadingCompleted(true);
                 throw;
+            }
+            finally
+            {
+                taskParameter.Dispose();
             }
 
             return image;

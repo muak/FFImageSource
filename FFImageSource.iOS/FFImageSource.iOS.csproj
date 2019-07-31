@@ -10,7 +10,6 @@
     <RootNamespace>FFImageLoading.Forms.iOS</RootNamespace>
     <AssemblyName>FFImageSource.iOS</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <ReleaseVersion>1.1.2</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -96,13 +95,13 @@
     <Compile Include="ImageServiceEx.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FFImageSource\FFImageSource.csproj">
-      <Project>{9CCB70D9-DF8F-4005-BD6B-C643D33715F7}</Project>
-      <Name>FFImageSource</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\FFImageSource\FFImageSource.csproj">
+      <Project>{C8EA555C-4D1C-41BE-B70F-C45A8D51F324}</Project>
+      <Name>FFImageSource</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.3.6.0.293080\build\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.6.0.293080\build\Xamarin.Forms.targets')" />
