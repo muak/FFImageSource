@@ -47,6 +47,12 @@ namespace FFImageLoading.Forms
             }
         }
 
+        public void ClearTaskParameter()
+        {
+            _taskParameter?.TryDispose();
+            _taskParameter = null;
+        }
+
         public static Assembly AssemblyCache;
 
         /// <summary>
