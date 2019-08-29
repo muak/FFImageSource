@@ -23,7 +23,7 @@ namespace FFImageLoading.Forms
             var hex = $"#{(int)(fillColor.R * 255):X2}{(int)(fillColor.G * 255):X2}{(int)(fillColor.B * 255):X2}";
             var replaceStringMap = new Dictionary<string, string>
                 {
-                    {"regex:fill=\"#.+\"",""},
+                    {"regex:fill=\"#.+?\"",""},
                     {"<svg",$"<svg fill=\"{hex}\" "}
                 };
 
