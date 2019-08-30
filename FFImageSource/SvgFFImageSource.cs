@@ -49,5 +49,9 @@ namespace FFImageLoading.Forms
             return base.GetTaskParameter().WithCustomDataResolver(GetVectorDataResolver());
         }
 
+        public IVectorImageSource Clone()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -60,5 +60,10 @@ namespace FFImageLoading.Forms
 
             return AddTaskOption(task);
         }
+
+        public IVectorImageSource Clone()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

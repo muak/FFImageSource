@@ -14,8 +14,6 @@ namespace FFImageLoading.Forms.Droid
     {
         public async Task<Bitmap> LoadImageAsync(ImageSource imagesource, Context context, CancellationToken cancelationToken = default(CancellationToken))
         {
-            ImageViewAsync _imageView = new ImageViewAsync(context);
-
             var ffImageSource = imagesource as FFImageSource;
 
             ffImageSource.LoadingStarted();
