@@ -5,6 +5,7 @@ using Android.Content;
 using FFImageLoading.Cache;
 using FFImageLoading.Drawables;
 using System.Reflection;
+using Android.Runtime;
 
 namespace FFImageLoading.Forms.Droid
 {
@@ -35,6 +36,7 @@ namespace FFImageLoading.Forms.Droid
     /// </summary>
     public class CachedImageExFastRenderer : Platform.CachedImageFastRenderer
     {
+        public CachedImageExFastRenderer(IntPtr handle,JniHandleOwnership ownership) : base(handle, ownership) { }
 
         public CachedImageExFastRenderer(Context context) : base(context)
         {
